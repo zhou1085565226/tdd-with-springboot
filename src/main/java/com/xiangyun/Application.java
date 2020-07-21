@@ -1,4 +1,4 @@
-package com.xiangyun.tdd;
+package com.xiangyun;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
