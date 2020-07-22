@@ -1,4 +1,4 @@
-package com.xiangyun.domain.model;
+package com.essContext.domain.model;
 
 import lombok.Data;
 

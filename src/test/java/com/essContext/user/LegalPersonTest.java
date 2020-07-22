@@ -1,9 +1,9 @@
-package com.xiangyun.user;
+package com.essContext.user;
 
-import com.xiangyun.BaseTest;
+import com.essContext.BaseTest;
 import org.junit.jupiter.api.Test;
 
-import static com.xiangyun.BaseRequestBody.body;
+import static com.essContext.BaseRequestBody.body;
 import static io.restassured.RestAssured.given;
 
 public class LegalPersonTest extends BaseTest {
