@@ -1,6 +1,5 @@
-package com.xiangyun.tdd;
+package com.xiangyun;
 
-import com.xiangyun.Application;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
