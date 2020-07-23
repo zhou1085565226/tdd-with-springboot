@@ -1,4 +1,4 @@
-package com.essContext.controller;
+package com.essContext.controller.request;
 
 import com.sun.istack.internal.NotNull;
 import lombok.Data;
@@ -12,4 +12,12 @@ public class LegalPersonRequest {
     private String companyName;
     @NonNull
     private String companyCode;
+    @NonNull
+    private String name;
+    @NonNull
+    private String idType;
+    @NonNull
+    private String idCode;
+
 }
+

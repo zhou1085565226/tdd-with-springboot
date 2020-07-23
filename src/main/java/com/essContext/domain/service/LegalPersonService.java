@@ -1,6 +1,6 @@
 package com.essContext.domain.service;
 
-import com.essContext.controller.LegalPersonRequest;
+import com.essContext.controller.request.LegalPersonRequest;
 import com.essContext.domain.model.LegalPerson;
 import com.essContext.domain.repository.LegalPersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +13,12 @@ public class LegalPersonService {
 
     public LegalPerson register(LegalPersonRequest request) {
         LegalPerson legalPerson = LegalPerson.builder()
-                .email(request.getCompanyName())
-                .name(request.getCompanyName())
+                .type(request.getType())
+                .companyName(request.getCompanyName())
+                .companyCode(request.getCompanyCode())
+                .name(request.getName())
+                .idType(request.getIdType())
+                .idCode(request.getIdCode())
                 .build();
         return legalPersonRepository.save(legalPerson);
     }

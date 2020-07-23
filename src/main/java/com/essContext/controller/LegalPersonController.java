@@ -1,5 +1,6 @@
 package com.essContext.controller;
 
+import com.essContext.controller.request.LegalPersonRequest;
 import com.essContext.domain.model.LegalPerson;
 import com.essContext.domain.service.LegalPersonService;
 import org.springframework.beans.factory.annotation.Autowired;

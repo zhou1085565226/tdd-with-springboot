@@ -6,6 +6,10 @@ import lombok.Data;
 @Data
 @Builder
 public class LegalPerson {
+    private String type;
+    private String companyName;
+    private String companyCode;
     private String name;
-    private String email;
+    private String idType;
+    private String idCode;
 }
