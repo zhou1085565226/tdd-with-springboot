@@ -1,14 +1,15 @@
 package com.essContext.controller.request;
 
-import com.sun.istack.internal.NotNull;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
 @Data
+@NoArgsConstructor
 public class LegalPersonRequest {
     @NonNull
     private String type;
-    @NotNull
+    @NonNull
     private String companyName;
     @NonNull
     private String companyCode;

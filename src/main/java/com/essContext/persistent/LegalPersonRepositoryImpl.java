@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @Repository
 public class LegalPersonRepositoryImpl implements LegalPersonRepository{
@@ -13,6 +14,7 @@ public class LegalPersonRepositoryImpl implements LegalPersonRepository{
 
     @Override
     public LegalPerson save(LegalPerson legalPerson) {
+        legalPerson.setId(UUID.randomUUID().toString());
         legalPersonList.add(legalPerson);
         return legalPerson;
     }

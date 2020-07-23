@@ -12,4 +12,5 @@ public class LegalPerson {
     private String name;
     private String idType;
     private String idCode;
+    private String id;
 }
