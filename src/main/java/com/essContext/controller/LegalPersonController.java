@@ -17,7 +17,7 @@ public class LegalPersonController {
     LegalPersonService legalPersonService;
 
     @PostMapping("/register")
-    public LegalPerson register(@Validated @RequestBody LegalPersonRequest request) {
+    public LegalPerson register(@Validated @RequestBody LegalPersonRequest request) throws Exception {
         return legalPersonService.register(request);
     }
 }

@@ -11,7 +11,7 @@ public class LegalPersonService {
     @Autowired
     LegalPersonRepository legalPersonRepository;
 
-    public LegalPerson register(LegalPersonRequest request) {
+    public LegalPerson register(LegalPersonRequest request) throws Exception {
         LegalPerson legalPerson = LegalPerson.builder()
                 .type(request.getType())
                 .companyName(request.getCompanyName())

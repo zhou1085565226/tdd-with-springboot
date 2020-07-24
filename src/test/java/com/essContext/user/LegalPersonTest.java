@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.essContext.BaseRequestBody.body;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
 public class LegalPersonTest extends BaseTest {
     @Test
@@ -20,6 +21,7 @@ public class LegalPersonTest extends BaseTest {
                         .build())
                 .when().post("/api/legalPerson/register")
                 .then().log().body()
+                .body("type", equalTo("1"))
                 .statusCode(200);
     }
 }
