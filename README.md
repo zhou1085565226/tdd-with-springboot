@@ -31,5 +31,15 @@
     AC-7：同步成为中国政务服务平台用户 必须
 
 #### 任务拆分
-- Given 合法的注册信息 When 注册 Then 注册成功
-- Given 
+- Given 法人类型为空 When 注册 Then 注册失败
+- Given 企业全称超过50字 When 注册 Then 注册失败
+- Given 企业统一社会信用代码不等于18位 When 注册 Then 注册失败
+- Given 如果社会信用代码已注册 When 注册 Then 当前企业已注册
+- Given 如果统一社会信用代码与企业名称不匹配 When 注册 Then 统一社会信用代码与企业名称不匹配
+- Given 法人姓名超出长度或者法人姓名未填写 When 注册 Then 注册失败
+- Given 证件类型未填写 When 注册 Then 注册失败
+- Given 证件类型超出类型范围 When 注册 Then 注册失败
+- Given 证件号码不等于18位 When 注册 Then 注册失败
+- Given 护照不等于14位 When 注册 Then 注册失败
+- Given 全部符合 When 注册 Then 注册成功
+

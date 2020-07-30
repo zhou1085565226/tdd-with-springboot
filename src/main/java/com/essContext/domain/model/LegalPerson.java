@@ -13,4 +13,8 @@ public class LegalPerson {
     private String idType;
     private String idCode;
     private String id;
+
+    private String code;
+    private String message;
+
 }
